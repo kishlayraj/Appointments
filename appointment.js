@@ -27,13 +27,14 @@ $.ajax({
 var showmore = false;
 $('.desc').live("click",function() {
 //alert("Hi");
-    if (showmore) {
+
+    if (this.showmore) {
         $(this).animate({height:'20px'}); 
     }
     else {
         $(this).animate({height:'100%'});
     }
-    showmore = !showmore;
+    this.showmore = !this.showmore;
 });
 
 
